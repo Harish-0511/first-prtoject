@@ -1,0 +1,318 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero .button {
+  background-color: #3498db;
+  color: rgb(255, 255, 255);
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .button:hover {
+  background-color: #2980b9;
+}
+
+/* Destinations Section */
+#destinations {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+#destinations h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.destination-link{
+   text-decoration: none;
+   color:  #333 ;
+}
+.destination-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+}
+
+.destination-card p {
+  padding: 0 15px 15px;
+  font-size: 1rem;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+#services {
+  background-color: #ecf0f1;
+  padding: 60px 20px;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.Flight-booking{
+  text-decoration: none;
+  color:#333 ;
+}
+.Flight-booking:hover{
+  text-decoration:underline;
+}
+.hotel-booking{
+  text-decoration: none;
+  color:#333 ;
+}
+.hotel-booking:hover{
+  text-decoration:underline;
+}
+.Tour-package{
+  text-decoration: none;
+  color:#333 ;
+}
+.Tour-package:hover{
+  text-decoration:underline;
+}
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  font-size: 1.2rem;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #34495e;
+  color: white;
+  padding: 60px 20px;
+}
+
+#testimonials h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #34495e;
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  background-color: white;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#contact button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(max-width: 400px){
+  body{
+    width: 500px;
+  }
+  ul{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: last baseline;
+    align-items: last baseline;
+  }
+}
+
+@media(max-width:450px){
+   body{
+    width: 800px;
+   }
+   ul{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+  
